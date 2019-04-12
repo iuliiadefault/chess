@@ -1,0 +1,117 @@
+body{
+  display: grid;
+  grid-template-areas: 
+    'container messages'
+    'container moves';
+  grid-template-columns: 520px 200px;
+  grid-template-rows: 30px 1fr;
+  grid-gap: 10px;
+  justify-items: start;
+}
+
+output.messages{
+  grid-area: messages;
+  padding: 10px;
+  width: auto;
+}
+
+output.moves{
+  grid-area: moves;
+  width: auto;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-area: container;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+  background-color:#888;  
+  padding: 10px;
+  width: 494px;	
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.grid-item {
+  background-color: #fff;
+  height: 60px;
+  text-align: center;
+}
+
+.grid-item:nth-child(-2n+8), 
+.grid-item:nth-child(8) ~ .grid-item:nth-child(-2n+15), 
+.grid-item:nth-child(16) ~ .grid-item:nth-child(-2n+24),
+.grid-item:nth-child(24) ~ .grid-item:nth-child(-2n+31),
+.grid-item:nth-child(32) ~ .grid-item:nth-child(-2n+40),
+.grid-item:nth-child(40) ~ .grid-item:nth-child(-2n+47),
+.grid-item:nth-child(48) ~ .grid-item:nth-child(-2n+56),
+.grid-item:nth-child(56) ~ .grid-item:nth-child(-2n+63) {
+  background-color: #ff299d;
+}
+
+.selected{
+  background-color:#fff554 !important;
+  transition-property: background-color;
+  transition-duration: .2s;
+  opacity: 1;  
+}
+
+.move{
+  background-color:#feab35 !important;  
+  transition-property: background-color;
+  transition-duration: .2s;
+  opacity: 1;  
+}
+
+.pawn-black{
+  background-image: url(pics/pawn_black.png);
+}
+
+.pawn-white{
+  background-image: url(pics/pawn_white.png);
+}
+
+.rook-black{
+  background-image: url(pics/rook_black.png);
+}
+
+.rook-white{
+  background-image: url(pics/rook_white.png);
+}
+
+.knight-black{
+  background-image: url(pics/knight_black.png);
+}
+
+.knight-white{
+  background-image: url(pics/knight_white.png);
+}
+
+.bishop-black{
+  background-image: url(pics/bishop_black.png);
+}
+
+.bishop-white{
+  background-image: url(pics/bishop_white.png);
+}
+
+.knight-black{
+  background-image: url(pics/knight_black.png);
+}
+
+.king-black{
+  background-image: url(pics/king_black.png);
+}
+
+.king-white{
+  background-image: url(pics/king_white.png);
+}
+
+.queen-black{
+  background-image: url(pics/queen_black.png);
+}
+
+.queen-white{
+  background-image: url(pics/queen_white.png);
+}

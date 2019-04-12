@@ -1,0 +1,30 @@
+{
+  "name": "chess_v1",
+  "version": "1.0.0",
+  "description": "chess game",
+  "main": "browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:server": "cd sources/server.src && tsc",
+    "build:client": "cd sources/client.src && tsc",
+    "build": "cd sources/server.src && tsc && cd ../client.src && tsc",
+    "start": "node public/server/server.src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "chess"
+  ],
+  "author": "Shutova Yulia",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.14.1",
+    "@types/ws": "^6.0.1",
+    "typescript": "^3.3.3333"
+  }
+}

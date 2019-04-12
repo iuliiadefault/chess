@@ -1,0 +1,1 @@
+export type FigureType = "rook" | "knight" | "bishop" | "pawn" | "king" | "queen";
